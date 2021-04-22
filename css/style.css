@@ -1,0 +1,81 @@
+/* general rules ------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* il font principale è a pagamento quindi lascio così */
+    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* comportamento base della maggior parte dei link */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* contenitore condiviso per centrare tutti i contenuti dei macroblocchi 
+e dare stesso ingombro (rendiamo già un minimo adaptive)
+e li richiama anche strutture a griglie di BS*/
+.container-center {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* contenitore riga clearfix */
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* centralizziamo ciò che si può */
+.btn {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 16px 32px;
+    background-color: #8ea1e1;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ipotizziamo di avere un tot di varianti simili nel sito quindi centralizziamo */
+.btn.white-black {
+    background-color: #fff;
+    color: #23272a;
+}
+
+.btn:hover{ /* semplifichiamo hover per tutti*/
+    text-decoration: none;
+    color: rgba(49,97,224,255);
+}
+
+
+/* header  ------------- */
+header {
+    /* height: 80px;
+    line-height: 80px; centratura verticale */
+}
+
+
+   
+
+
+
+/* main content  ------------- */
+    
+
+
+/* footer  ------------- */
+footer{
+    /* background-color: #23272a;
+    padding: 80px 0 60px 0; */
+}

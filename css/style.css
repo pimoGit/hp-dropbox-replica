@@ -65,6 +65,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 500;
 }
 
     /* main nav */
@@ -124,7 +125,7 @@ header {
     display: none;
     float: none;
     position: absolute;
-    top: 80px;
+    top: 79px;
     left: -20px;
     padding: 17px 0;
     background-color: #fafafa;
@@ -154,7 +155,36 @@ header {
 
 
 /* main content  ------------- */
-    
+main{
+    margin-top: 80px; /* per ingombro header in fixed */
+}
+
+/* container di centratura ingombri sezioni */
+.container-center{
+    width: 90%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+    /* jumbo */
+#jumbo{
+    background-color: #0d2f81;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+#jumbo .container-center{
+    padding-right: 26%;
+}
+#jumbo h3 {
+    font-size: 25px;
+    color: #ffe7aa;
+    margin-bottom: 20px;
+}
+#jumbo h1 {
+    font-size: 71px;
+    color: #ffe7aa;
+    margin-bottom: 50px;
+}
 
 
 /* footer  ------------- */

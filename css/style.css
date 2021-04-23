@@ -61,7 +61,12 @@ header {
     border-bottom: solid 1px #d0d0d3;
     background-color: #fff;
     padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
     /* main nav */
 #main-nav{
     /* aggiustamenti per tenere centratura anche su effetto hover */
@@ -88,13 +93,25 @@ header {
     color: #000;
     display: inline-block;
 }
-#main-nav ul li a:hover {
+#main-nav ul li a.btn {
+    color: #fff;
+    display: inline;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+/* uso di pseudoselettore avanzato :not(con sintassi più supportata) 
+(alternativa sotto) */
+#main-nav ul li a:not(#logo):not(.btn):hover {
     text-decoration: none;
     border-bottom: solid 2px #000;
 }
+/* alternativa */
+/* #main-nav ul li a#logo:hover, #main-nav ul li a.btn:hover {
+    border-bottom: none;
+} */
 
 #logo img {
-    vertical-align: middle;  /* centratura verticale */
+    vertical-align: text-bottom;  /* centratura verticale (visivamente meglio di "middle") */
 }
 
 

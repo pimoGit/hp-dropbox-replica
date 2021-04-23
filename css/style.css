@@ -6,8 +6,8 @@
 }
 
 body{
-    /* il font principale è a pagamento quindi lascio così */
-    font-family: SharpGroteskWide,Open Sans,sans-serif;
+    /* il font principale è a pagamento, ma usiamo l'open sans da Gfonts */
+    font-family: 'SharpGroteskWide','Open Sans',sans-serif;
     font-size: 16px;
     color: #fff;
 }
@@ -55,8 +55,12 @@ a:hover {
 
 /* header  ------------- */
 header {
-    /* height: 80px;
-    line-height: 80px; centratura verticale */
+    /* font-family: 'Atlas Grotesk Web', 'Open Sans', sans-serif; */
+    height: 80px;
+    line-height: 80px; /* centratura verticale */
+    border-bottom: solid 1px #d0d0d3;
+    background-color: #fff;
+    padding: 0 10%;
 }
 
 

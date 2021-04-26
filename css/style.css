@@ -314,5 +314,53 @@ main{
 /* footer  ------------- */
 footer{
     background-color: #000;
-    padding: 100px 0 40px 0;
+    padding: 100px 50px 40px 50px;
+}
+
+   /* menu replica col */
+footer .col {
+    float: left;
+    width: 20%;
+    padding-right: 5px;
+}
+footer .col h5 {
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 20px;
+}
+footer .col ul{
+    list-style-type: none;
+}
+footer .col li {
+    margin: 6px 0;
+}
+footer .col li a{
+    color: #fff;
+    font-size: 14px;
+}
+
+    /* language */
+#language {
+    display: inline-block;
+    padding-right: 35px;
+    padding-top: 45px;
+    border-top: solid 1px #fff;
+    margin-top: 100px;
+}
+
+#language a {
+    color: rgb(102, 102, 102);
+    font-size: 13px;
+}
+#language a:hover {
+    text-decoration: none;
+}
+#language a img  {
+    vertical-align: middle;
+    height: 20px;
+}
+/* img triangolino (volendo aggiungiamo id in alternativa) */
+#language a img:last-child {
+    vertical-align: bottom;
+    height: 14px;
 }

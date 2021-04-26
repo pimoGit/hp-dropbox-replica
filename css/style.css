@@ -166,29 +166,153 @@ main{
     margin: 0 auto;
 }
 
-    /* jumbo */
-#jumbo{
+    /* jumbo top */
+#jumbo-up{
     background-color: #0d2f81;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
 }
-#jumbo .container-center{
-    padding-right: 26%;
+#jumbo-up .container-center{
+    padding-right: 30%;
 }
-#jumbo h3 {
+#jumbo-up h3 {
     font-size: 25px;
     color: #ffe7aa;
     margin-bottom: 20px;
 }
-#jumbo h1 {
+#jumbo-up h1 {
     font-size: 71px;
     color: #ffe7aa;
     margin-bottom: 50px;
 }
 
+    /* jumbo bottom */
+#jumbo-down{
+    background-color: #ffe7aa;
+    padding-bottom: 130px;
+}
+
+#jumbo-down .col-sx {
+    float: left;
+    width: 60%;
+    position: relative; /* lo spostiamo visivamente i alto accavallato alla parte sopra*/
+    top: -40px;
+}
+#jumbo-down .col-sx img {
+    max-width: 100%;
+}
+
+#jumbo-down .col-dx {
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+    padding-top: 300px;
+    color: #000;
+}
+#jumbo-down .col-dx h3{
+    color: #0d2f81;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+    /* sezione principale */
+#main-section{
+    background-color: #0d2f81;
+    padding:100px 0;
+}
+
+
+#main-section h2{
+ color: #ffe7aa;
+ font-size: 41px;
+ line-height: 46px;
+ margin-bottom: 50px;
+ max-width: 720px;
+}
+
+#main-section .col-sx {
+    float: left;
+    width: 30%;
+}
+#main-section .col-sx .item {
+    margin-bottom: 40px;
+    color: #fff;
+}
+#main-section .col-sx .item h4{
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+#main-section .col-dx {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    /* non abbiamo ancora effetti/controlli avanzati (come parallax qui), 
+    ma simuliamo quello che possiamo*/
+    overflow-y: auto; 
+    max-height: 550px;
+}
+#main-section .col-dx img{
+    max-width: 100%;
+}
+
+
+    /* info section */
+#info-section  {
+    padding-bottom: 100px;
+    background-color: #0d2f81;
+}
+#info-section .container-center {
+    border-top: solid 1px #ffe7aa;
+    padding-top: 100px;
+}
+
+#info-section .col-sx {
+    float: left;
+    width: 55%;
+}
+#info-section h2{
+    color: #ffe7aa;
+    font-size: 41px;
+    line-height: 46px;
+   }
+
+#info-section .col-dx {
+    float: left;
+    width: 30%;
+    margin-left: 15%;
+}
+
+    /* plans section */
+#plans-section  {
+    padding: 100px 0;
+    color: #000;
+}
+#plans-section h4 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#plans-section .col{
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+}
+/* colonne identiche, salviamo una calsse unsando uno pseudo-selettore */
+#plans-section .col:last-child{
+    margin-right: 0;
+}
+#plans-section .col h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
 
 /* footer  ------------- */
 footer{
-    /* background-color: #23272a;
-    padding: 80px 0 60px 0; */
+    background-color: #000;
+    padding: 100px 0 40px 0;
 }

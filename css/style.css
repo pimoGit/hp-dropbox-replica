@@ -6,8 +6,8 @@
 }
 
 body{
-    /* il font principale è a pagamento, ma usiamo l'open sans da Gfonts */
-    font-family: 'SharpGroteskWide','Open Sans',sans-serif;
+    /* il font principale ('SharpGroteskWide') è a pagamento, ma usiamo l'open sans da Gfonts */
+    font-family: 'Open Sans',sans-serif;
     font-size: 16px;
     color: #fff;
 }
@@ -300,7 +300,7 @@ main{
     width: 45%;
     margin-right: 10%;
 }
-/* colonne identiche, salviamo una calsse unsando uno pseudo-selettore */
+/* colonne identiche, evitiamo una calsse usando uno pseudo-selettore */
 #plans-section .col:last-child{
     margin-right: 0;
 }
